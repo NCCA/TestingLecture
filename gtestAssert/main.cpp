@@ -62,26 +62,26 @@ TEST(str2Double,smallScientific)
 TEST(str2Double,empty)
 {
   double value;
-  ASSERT_FALSE(stringToDouble("",value));
+  ASSERT_THROW(stringToDouble("",value),std::invalid_argument);
 }
 
 TEST(str2Double,whitespace)
 {
   double value;
-  ASSERT_FALSE(stringToDouble(" ", value));
+  ASSERT_THROW(stringToDouble(" ", value),std::invalid_argument);
 }
 
 TEST(str2Double,plusminus)
 {
   double value;
-  ASSERT_FALSE(stringToDouble("+-1", value));
+  ASSERT_THROW(stringToDouble("+-1", value),std::invalid_argument);
 }
 
 // this one is intersting it should fail but returns 1 / true but from the spec
 // Function discards any whitespace characters (as determined by std::isspace())
 // until first non-whitespace character is found.
-// Then it takes as many characters as possible to form a valid floating-point representation
-// and converts them to a floating-point value.
+// Then it takes as many characters as possible to form a valid floating-point representation and converts them to a floating-point value.
+// The valid floating-point value can be one of the following:
 TEST(str2Double,multiplepoints)
 {
   double value;
@@ -91,7 +91,7 @@ TEST(str2Double,multiplepoints)
 TEST(str2Double,notanumber)
 {
   double value;
-  ASSERT_FALSE(stringToDouble("text", value));
+  ASSERT_THROW(stringToDouble("text", value),std::invalid_argument);
 }
 
 
