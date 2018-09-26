@@ -18,7 +18,7 @@ class Turtle
   private :
    int m_x=0;
    int m_y=0;
-   int m_rot;
+   int m_rot=0;
 
 };
 

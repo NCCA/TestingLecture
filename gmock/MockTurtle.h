@@ -1,3 +1,5 @@
+// based on example here https://github.com/google/googletest/blob/master/googlemock/docs/ForDummies.md
+
 #ifndef MOCKTURTLE_H_
 #define MOCKTURTLE_H_
 #include "Turtle.h"

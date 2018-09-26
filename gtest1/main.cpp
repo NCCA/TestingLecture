@@ -51,6 +51,13 @@ TEST(str2Double,largeScientific)
   ASSERT_DOUBLE_EQ(value, 2e10);
 }
 
+TEST(str2Double,random)
+{
+  double value;
+  ASSERT_FALSE(stringToDouble("one",value));
+  ASSERT_DOUBLE_EQ(1.0,value);
+}
+
 
 TEST(str2Double,smallScientific)
 {

@@ -1,3 +1,4 @@
+// based on example here https://github.com/google/googletest/blob/master/googlemock/docs/ForDummies.md
 #ifndef PAINTER_H_
 #define PAINTER_H_
 #include "Turtle.h"

@@ -32,3 +32,11 @@ TEST(PainterTest, CanDrawSomething)
   // Note test and mock together!
   EXPECT_TRUE(painter.drawCircle(0, 0, 10));
 }
+
+
+
+
+
+
+
+

@@ -3,7 +3,7 @@
 
 bool stringToDouble(const std::string &_str, double &io_result)
 {
-	bool success=true;
+  bool success=true;
 
   try
 	{
