@@ -84,7 +84,7 @@ TEST(str2Double,plusminus)
   ASSERT_FALSE(stringToDouble("+-1", value));
 }
 
-// this one is intersting it should fail but returns 1 / true but from the spec
+// this one is interesting it should fail but returns 1 / true but from the spec
 // Function discards any whitespace characters (as determined by std::isspace())
 // until first non-whitespace character is found.
 // Then it takes as many characters as possible to form a valid floating-point representation
